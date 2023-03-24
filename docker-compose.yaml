@@ -1,0 +1,9 @@
+---
+version: '3'
+services:
+  temp_container:
+  build: .
+  volumes:
+  environment:
+    - TEST_PASSWORD=${PASSWORD}
+  restart: always
